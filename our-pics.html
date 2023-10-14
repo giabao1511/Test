@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web cho em</title>
+    <link
+      rel="shortcut icon"
+      type="image/jpg"
+      href="./assets/img/favicon.png"
+    />
+    <link rel="stylesheet" href="./assets/css/our-pics.css" />
+  </head>
+  <body onload="fakeLoading()">
+    <audio id="bg-music" autoplay loop hidden>
+      <source
+        src="./assets/audio/♬ Lofi Lyrics_Dịu Dàng Em Đến - Erik x meChill - Kho Nhạc Lofi Chill Nhất TikTok.mp3"
+        type="audio/mpeg"
+      />
+    </audio>
+    <div id="container">
+      <div id="loading-page">
+        <div id="loading-bg"></div>
+        <h2 id="loading-content">Happy Birthday...</h2>
+      </div>
+      <div class="slider" id="slider" style="--img-prev: url()">
+        <div class="slider__content" id="slider-content">
+          <div class="slider__images">
+            <div
+              class="slider__images-item slider__images-item--active"
+              data-id="1"
+            >
+              <img src="./assets/img/baovanhi3.jpg" />
+            </div>
+            <div class="slider__images-item" data-id="2">
+              <img src="./assets/img/baovanhi2.jpg" />
+            </div>
+            <div class="slider__images-item" data-id="3">
+              <img src="./assets/img/baovanhi.jpg" />
+            </div>
+            <div class="slider__images-item" data-id="4">
+              <img src="./assets/img/nhivabao5.jpg" />
+            </div>
+            <div class="slider__images-item" data-id="5">
+              <img src="./assets/img/baovanhi4.jpg" />
+            </div>
+          </div>
+          <div class="slider__text">
+            <div
+              class="slider__text-item slider__text-item--active"
+              data-id="1"
+            >
+              <div class="slider__text-item-head">
+                <h3>Your smile</h3>
+              </div>
+              <div class="slider__text-item-info">
+                <p>
+                  “Con người chỉ hạnh phúc khi có đủ hai thứ: nụ cười và người
+                  bên mình để tạo nên nụ cười ấy. Vậy em hẳn rất hạnh phúc khi
+                  có nụ cười toả nắng như thế và có anh :3 chúc em mãi hạnh phúc
+                  như thế nhé”
+                </p>
+              </div>
+            </div>
+            <div class="slider__text-item" data-id="2">
+              <div class="slider__text-item-head">
+                <h3>Happiness</h3>
+              </div>
+              <div class="slider__text-item-info">
+                <p>
+                  “Hôm nay là 11/11/2021. Là 1 ngày quan trọng , là ngày sinh
+                  nhật em , là ngày em trưởng thành về mặt pháp luật nhưng về
+                  mặt tình yêu thì em mãi là cục cưng của anh, mong rằng khi bên
+                  anh em không cần phải trưởng thành , mãi vui tính và xàm xí
+                  với anh nhé 😚😚 ”
+                </p>
+              </div>
+            </div>
+            <div class="slider__text-item" data-id="3">
+              <div class="slider__text-item-head">
+                <h3>Destiny</h3>
+              </div>
+              <div class="slider__text-item-info">
+                <p>
+                  “Cuộc đời này gặp được ai đó là duyên, và anh đã gặp được em
+                  đó cũng là phận. Hi vọng duyên phận của anh và em sẽ được bền
+                  lâu nhất mà nó có thể có nhé. Happy birthday to my love 💞💞💞”
+                </p>
+              </div>
+            </div>
+            <div class="slider__text-item" data-id="4">
+              <div class="slider__text-item-head">
+                <h3>Success</h3>
+              </div>
+              <div class="slider__text-item-info">
+                <p>
+                  “Tuy rằng anh không giỏi vẽ nhưng thật may vì đã có em, chúc
+                  em ngày càng vẽ đẹp hơn, ngày càng phát triển tài năng cùng
+                  với đam mê của mình và hãy cùng anh vẽ lên chuyện tình đẹp của
+                  đôi mình”
+                </p>
+              </div>
+            </div>
+            <div class="slider__text-item" data-id="5">
+              <div class="slider__text-item-head">
+                <h3>You</h3>
+              </div>
+              <div class="slider__text-item-info">
+                <p>
+                  “Mừng sinh nhật em, anh sẽ chỉ chúc em được nhiều sức khỏe
+                  thôi. Còn về hạnh phúc và niềm vui, anh mong rằng chính mình
+                  sẽ là người mang những điều đó đến với em. Vậy cho nên là, yêu
+                  emmm 🤗🤗”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__nav">
+          <div class="slider__nav-arrows">
+            <div class="slider__nav-arrow slider__nav-arrow--left" id="left">
+              to left
+            </div>
+            <div class="slider__nav-arrow slider__nav-arrow--right" id="right">
+              to right
+            </div>
+          </div>
+          <div class="slider__nav-dots" id="slider-dots">
+            <div
+              class="slider__nav-dot slider__nav-dot--active"
+              data-id="1"
+            ></div>
+            <div class="slider__nav-dot" data-id="2"></div>
+            <div class="slider__nav-dot" data-id="3"></div>
+            <div class="slider__nav-dot" data-id="4"></div>
+            <div class="slider__nav-dot" data-id="5"></div>
+          </div>
+        </div>
+        <div id="next-btn">
+          <a href="./page-3.html">Tiếp thôi nào 💓</a>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./assets/js/our-pic.js"></script>
+  </body>
+</html>

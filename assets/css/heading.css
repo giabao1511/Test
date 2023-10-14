@@ -1,0 +1,113 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: pacifico;
+  src: url("../font/Pacifico-Regular.ttf");
+}
+
+@font-face {
+  font-family: lobster;
+  src: url("../font/Lobster-Regular.ttf");
+}
+
+body {
+  background-color: #f9e0e0;
+}
+
+#container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#birthday {
+  display: none;
+}
+
+#birthday--heading,
+#birthday--name {
+  font-size: 70px;
+  text-align: center;
+  background: linear-gradient(to right, #f761a1 0%, #e2b0ff 50%, #9f44d3 110%);
+  background-clip: border-box;
+  background-size: auto auto;
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+  font-family: pacifico;
+  animation: textclip 4s linear infinite;
+}
+
+#timer {
+  font-size: 30px;
+  margin-top: 60px;
+  text-align: center;
+  background: linear-gradient(to right, #f761a1 0%, #e2b0ff 50%, #9f44d3 110%);
+  background-clip: border-box;
+  background-size: auto auto;
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  font-family: pacifico;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 4s linear infinite;
+}
+
+#move-btn a {
+  font-size: 20px;
+  font-family: lobster;
+  color: #497ba7;
+  text-decoration: none;
+}
+
+#move-btn {
+  position: relative;
+  width: 200px;
+  text-align: center;
+  margin: 40px auto;
+  background: linear-gradient(150deg, #ecc3c1 0%, #ffabb8 160%);
+  border-radius: 6px;
+  line-height: 50px;
+  display: none;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/*#move-btn:before (attr data-hover)*/
+#move-btn:hover:before {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+#move-btn:before {
+  font-size: 12px;
+  color: #497ba7;
+  content: attr(data-hover);
+  position: absolute;
+  text-transform: uppercase;
+  right: 44px;
+  font-family: pacifico;
+  opacity: 0;
+  transform: translate(-100%, 0);
+  transition: all 0.5s ease-in-out;
+}
+/*#move-btn div (#move-btn text before hover)*/
+#move-btn:hover div {
+  opacity: 0;
+  transform: translate(100%, 0);
+}
+#move-btn div {
+  transition: all 0.5s ease-in-out;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
